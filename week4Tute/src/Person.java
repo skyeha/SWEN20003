@@ -1,27 +1,27 @@
 public class Person {
     public String name;
-    public double x;
-    public double y;
-    public String householdName;
+    private Point location = new Point();
 
+    private Household householdName = new Household();
     private static Person[] people = new Person[100];
+
     private static int peopleCount = 0;
 
 
     public Person(String name, double x, double y, String householdName) {
         this.name = name;
-        this.x = x;
-        this.y = y;
-        this.householdName = householdName;
+        this.location.setX(x);
+        this.location.setY(y);
+        this.householdName.setName(householdName);
 
         if (peopleCount < 100) {
             people[peopleCount++] = this;
         }
     }
 
-    public double distanceToPerson(Person person) {
-        return Math.sqrt((x - person.x) * (x - person.x)
-                + (y - person.y) * (y - person.y));
+    private void addPerson(String )
+    private double distanceToPerson(Person person) {
+        return this.location.distanceTo(person.location);
     }
 
     private Person[] peopleCloserThan(double distance) {
