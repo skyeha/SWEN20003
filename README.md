@@ -1,4 +1,4 @@
-# Object Oriented Software Development - SWEN20003
+# SWEN20003
 This repo contains codes that were written for each assigment in the subject Object Oriented Software Development at University of Melbourne. This is also the first time I was exposed with Github and understanding its basic commands.
 
 # Project Overview
